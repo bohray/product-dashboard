@@ -16,7 +16,8 @@ const Filters = ({ categories }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       dispatch(setSearch(searchValue));
-    }, 300);
+    }, 700);
+    return () => clearTimeout(timer);
   }, [searchValue, dispatch]);
 
   const sortCategories = [
