@@ -64,7 +64,7 @@ const ProductCard = ({ product }) => {
 
         {/* Push price & CTA to bottom */}
         <div className=" mt-auto text-md font-bold bg-sky-100 text-sky-700 p-2 text-center rounded-lg">
-          ₹ {product.price}
+          $ {product.price}
         </div>
       </div>
     </Link>
